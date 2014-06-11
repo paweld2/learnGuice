@@ -1,10 +1,10 @@
-package warsjava.guice.servlet;
+package eu.pmsoft.tutorial.parts.part5;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
 import eu.pmsoft.tutorial.guice.model.User;
-import warsjava.guice.servlet.service.ModelService;
-import warsjava.guice.servlet.service.ModelServiceImplementation;
+import eu.pmsoft.tutorial.parts.part5.service.ModelService;
+import eu.pmsoft.tutorial.parts.part5.service.ModelServiceImplementation;
 
 import com.google.inject.Provides;
 import com.google.inject.servlet.ServletModule;

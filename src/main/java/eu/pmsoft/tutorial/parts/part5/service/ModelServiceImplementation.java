@@ -1,4 +1,4 @@
-package warsjava.guice.servlet.service;
+package eu.pmsoft.tutorial.parts.part5.service;
 
 import javax.servlet.http.HttpServletRequest;
 

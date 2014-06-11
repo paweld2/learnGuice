@@ -1,4 +1,4 @@
-package warsjava.guice.servlet;
+package eu.pmsoft.tutorial.parts.part5;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import eu.pmsoft.tutorial.guice.api.direct.ModelContract;
-import warsjava.guice.servlet.service.ModelService;
+import eu.pmsoft.tutorial.parts.part5.service.ModelService;
 
 import com.google.inject.Inject;
 

@@ -1,4 +1,4 @@
-package eu.pmsoft.tutorial.parts.part2;
+package eu.pmsoft.tutorial.parts.part4;
 
 import java.util.List;
 
@@ -7,11 +7,11 @@ import eu.pmsoft.tutorial.guice.api.direct.ModelPlugin;
 import com.google.inject.AbstractModule;
 import com.google.inject.internal.UniqueAnnotations;
 
-public class PlugInInstalationModule extends AbstractModule {
+public class PlugInInstallationModule extends AbstractModule {
 
 	private final List<ModelPlugin> toInstall;
 	
-	public PlugInInstalationModule(List<ModelPlugin> toInstall) {
+	public PlugInInstallationModule(List<ModelPlugin> toInstall) {
 		super();
 		this.toInstall = toInstall;
 	}

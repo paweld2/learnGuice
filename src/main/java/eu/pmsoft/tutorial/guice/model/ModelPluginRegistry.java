@@ -1,4 +1,4 @@
-package warsjava.guice.multibinding;
+package eu.pmsoft.tutorial.guice.model;
 
 import java.util.Map;
 import java.util.Set;

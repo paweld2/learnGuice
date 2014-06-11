@@ -1,4 +1,4 @@
-package eu.pmsoft.tutorial.parts.part2;
+package eu.pmsoft.tutorial.parts.part3;
 
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
@@ -14,8 +14,6 @@ import eu.pmsoft.tutorial.guice.model.ArticleServiceFactory;
 import eu.pmsoft.tutorial.guice.model.Comment;
 import eu.pmsoft.tutorial.guice.model.Result;
 import eu.pmsoft.tutorial.guice.model.Task;
-
-import java.util.concurrent.atomic.AtomicInteger;
 
 /**
  * User: paweld2
@@ -33,28 +31,26 @@ public class ProvidersModelModule extends AbstractModule {
 
         bind(Task.class).toProvider(new TaskProvider());
 
+
         bind(ArticleBackend.class).to(ArticleBackendImpl.class);
         install(new FactoryModuleBuilder()
-                .implement(ArticleService.class,ArticleServiceImpl.class)
+                .implement(ArticleService.class, ArticleServiceImpl.class)
                 .build(ArticleServiceFactory.class));
     }
 
     @Provides
-    public ArticleService buildDefaultService(ArticleServiceFactory factory){
-        return factory.build(0,"no-key");
+    public ArticleService buildDefaultService(ArticleServiceFactory factory) {
+        return factory.build(0, "no-key");
     }
-
-
-    private final AtomicInteger modelCounter = new AtomicInteger(0);
 
     @Provides
     public Comment getComment() {
-        return new Comment(modelCounter.addAndGet(1), "content");
+        return new Comment(1, "content");
     }
 
     @Provides
     public Result getResult() {
-        return new Result(modelCounter.addAndGet(1));
+        return new Result(2);
     }
 
 }

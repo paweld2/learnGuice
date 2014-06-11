@@ -1,4 +1,4 @@
-package eu.pmsoft.tutorial.parts.part2;
+package eu.pmsoft.tutorial.parts.part3;
 
 import eu.pmsoft.tutorial.guice.api.direct.InternalModelAPI;
 import eu.pmsoft.tutorial.guice.model.TaskObserver;

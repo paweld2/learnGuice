@@ -5,9 +5,9 @@ import org.aopalliance.intercept.MethodInvocation;
 
 public class ForbiddenMethodInterceptor implements MethodInterceptor {
 
-	@Override
-	public Object invoke(MethodInvocation invocation) throws Throwable {
-		throw new RuntimeException("forbidden");
-	}
+    @Override
+    public Object invoke(MethodInvocation invocation) throws Throwable {
+        throw new ForbiddenException();
+    }
 
 }

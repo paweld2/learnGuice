@@ -13,7 +13,7 @@
 	</filter-mapping>
 
 	<listener>
-		<listener-class>warsjava.guice.servlet.WarsjavaGuiceServletContextListener</listener-class>
+		<listener-class>eu.pmsoft.tutorial.parts.part5.WarsjavaGuiceServletContextListener</listener-class>
 	</listener>
 
 </web-app>

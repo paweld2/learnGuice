@@ -1,9 +1,9 @@
-package warsjava.guice.servlet;
+package eu.pmsoft.tutorial.parts.part5;
 
 import eu.pmsoft.tutorial.guice.api.direct.ModelEnvironment;
 import eu.pmsoft.tutorial.parts.part2.EnvironmentModule;
-import eu.pmsoft.tutorial.parts.part2.ModelModule;
-import eu.pmsoft.tutorial.parts.part2.TaskModelModule;
+import eu.pmsoft.tutorial.parts.part3.ModelModule;
+import eu.pmsoft.tutorial.parts.part3.TaskModelModule;
 
 import com.google.inject.Guice;
 import com.google.inject.Injector;
